@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+/* TYPOGRAPHY *************************************************************** */
+
+html {
+  font-size: 18px;
+}
+
+/* BODY *************************************************************** */
+
+body {
+  /* background-image: linear-gradient(rgb(253, 252, 251), rgb(226, 209, 195)); */
+  background-image: url(./assets/earth-11048_1920.jpg);
+}
+
+/* veliki div u koje ce biti sve male kutijice zemalja*/
+
+.countries-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2% 5%;
+  padding: 10px 0px 0px;
+}
+/* buduca kutijica za svaku zemlju*/
+
+.country-div {
+  width: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+  background: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0.8;
+}
+
+.flag-img {
+  width: 100%;
+}
+
+.countryName-p {
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  margin: 1rem 0 1rem;
+  /* height: 1 em; */
+}
+
+.property-type {
+  font-weight: bold;
+  color: red;
+}
+
+.capital-p,
+.population-p,
+.languages-p {
+  margin-bottom: 0.5rem;
+}
+
+/* kraj -kutija za svaku zemlju*/
+
+/* input koji stavi user*/
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 8px 0;
+  width: 40%;
+  padding: 12px 20px;
+}
+
+input:focus {
+  background-color: lightgray;
+  border: 3px solid #555;
+}
+
+/* kutija za TOP 10*/
+
+.top-ten-population {
+  width: 50%;
+  margin: 2% 20% 5% 0;
+}
+
+.container {
+  margin-left: 2%;
+  width: 100%;
+  background-color: beige;
+  opacity: 0.8;
+}
+
+.population-bar {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(153, 165, 202);
+}
+.subtitle-for-stats {
+  margin-left: 2%;
+  color: whitesmoke;
+}
+
+.toptenNames {
+  color: black;
+  font-weight: bolder;
+}
+
+/* kutija za TOP 10*-end/
+
+/*buttons styles*/
+
+button {
+  background-image: linear-gradient(rgb(238, 187, 196), rgb(172, 74, 92));
+  border: solid 1px black;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  display: inline;
+  font-weight: bold;
+  margin: 8px 0;
+  padding: 14px 20px;
+}
+
+button:hover {
+  background-image: linear-gradient(rgb(122, 111, 173), rgb(14, 3, 12));
+  color: white;
+}
+
+button:active {
+  background-image: linear-gradient(rgb(189, 25, 53), rgb(56, 7, 16));
+  box-shadow: 0 5px #666;
+  color: white;
+  transform: translateY(4px);
+}
+
+/* header box sa buttons i inputom*/
+.main_box {
+  background-image: linear-gradient(rgb(33, 147, 176), rgb(109, 213, 237));
+  opacity: 0.85;
+  background-color: #e5bcd2;
+  border-radius: 5px;
+  margin: 2% 5%;
+  padding: 10px 0px 0px;
+  text-align: center;
+}
+.main_boxText {
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+  line-break: strict;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  color: rgb(6, 6, 94);
+  font-weight: bolder;
+  font-style: italic;
+}
+
+/*responsivnest*/
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  html {
+    font-size: calc(16px + (18 - 16) * (100vw - 600px) / (900 - 600));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
