@@ -86,11 +86,11 @@ input:focus {
 
 .top-ten-population {
   width: 50%;
-  margin: 2% 20% 5% 0;
+  margin: 2% 25%;
 }
 
 .container {
-  margin-left: 2%;
+  /* margin-left: 20%; */
   width: 100%;
   background-color: beige;
   opacity: 0.8;
@@ -102,7 +102,7 @@ input:focus {
   background-color: rgb(153, 165, 202);
 }
 .subtitle-for-stats {
-  margin-left: 2%;
+  margin-left: 25%;
   color: whitesmoke;
 }
 
