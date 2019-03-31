@@ -161,8 +161,6 @@ SOMETHING is not working in this part if that is ON(meaning not commented out ) 
 //   }
 // });
 
-/* try differnt way buttons way 2-end*/
-
 /*
 
 INPUT FIELD********************
