@@ -4,7 +4,7 @@ View countrie info and flags.
 Search by name, capital, or language.
 Sort alphabetically by name, capital, population or language. (ascending or descending)
 
-### [Demo]
+### [Demo](https://mirelaviit.github.io/Countries-Info-search/)
 
 ### Author
 
