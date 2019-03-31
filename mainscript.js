@@ -140,31 +140,31 @@ SOMETHING is not working in this part if that is ON(meaning not commented out ) 
   You have to go over each item in the array and call `addEventListener` on each one.
 */
 buttons.forEach(button => {
-    button.addEventListener("click", e => {
-        let searchTerm = e.target.value.toLowerCase();
+  button.addEventListener("click", e => {
+    let searchTerm = e.target.value.toLowerCase();
 
-        if (e.target.className === "Sort") {
-            function buttonFunction() {
-                let sort = document.querySelectorAll(".Sort");
+    if (e.target.className === "Sort") {
+      function buttonFunction() {
+        let sort = document.querySelectorAll(".Sort");
 
-                if (sort.className === "SortDesc") {
-                    showCountries(filterCountries(reversedArray, searchTerm));
+        if (sort.className === "SortDesc") {
+          showCountries(filterCountries(reversedArray, searchTerm));
 
-                    sort.className = "SortByName";
-                } else if (sort.className === "SortByName") {
-                    sort.className = "SortDesc";
+          sort.className = "SortByName";
+        } else if (sort.className === "SortByName") {
+          sort.className = "SortDesc";
 
-                    showCountries(filterCountries(countries, searchTerm));
-                }
-            }
-
-            buttonFunction();
-        } else if (e.target.className === "SortByCapital") {
-            showCountries(filterCountries(capitalArray, searchTerm));
-        } else {
-            showCountries(filterCountries(populationArray, searchTerm));
+          showCountries(filterCountries(countries, searchTerm));
         }
-    });
+      }
+
+      buttonFunction();
+    } else if (e.target.className === "SortByCapital") {
+      showCountries(filterCountries(capitalArray, searchTerm));
+    } else {
+      showCountries(filterCountries(populationArray, searchTerm));
+    }
+  });
 });
 
 /*
