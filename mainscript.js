@@ -72,10 +72,12 @@ const filterCountries = (array, search) => {
 
     let isName = name.toLowerCase().includes(search);
     let isCapital = capital.toLowerCase().includes(search);
-    let isLanguages = languages
-      .join(", ")
-      .toLowerCase()
-      .includes(search);
+    let isLanguages = languages.find(language =>
+      language
+        .join(", ")
+        .toLowerCase()
+        .includes(search)
+    );
 
     return isName || isCapital || isLanguages;
   });
